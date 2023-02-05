@@ -28,7 +28,7 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![Screenshot 2023-02-05 at 12-38-42 Not Found](https://user-images.githubusercontent.com/60887763/216814602-e07c4bab-623e-47aa-9d56-e7fc4d4a7ce9.png)
 
 - The objective of this project is to create a responsive 404 error page that adheres to the established design specifications.
 
