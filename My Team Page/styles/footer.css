@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+.footer {
+    margin-top: 115px;
+}
+
+.footer-content {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 0.875rem;
+    line-height: 1rem;
+
+    color: #A9A9A9;
+}
+
+.footer-username {
+    text-decoration: none;
+    color: #A9A9A9;
+}
+
+.footer-username:hover {
+    font-weight: 700;
+    color: #333333;
+}
+
+@media screen and (max-width: 600px) {
+
+    .footer {
+        padding-top: 20px;
+        margin-top: 20px;
+    }
+
+    .footer-content {
+        font-size: 0.75rem;
+        line-height: 14px;
+    }
+}

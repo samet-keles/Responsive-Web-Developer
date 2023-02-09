@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.first-row {
+    margin-top: 96px;
+} 
+
+.second-figure {
+    padding-top: 99px;
+}
+
+.fifth-figure {
+    padding-top: 99px
+}
+
+img {
+    max-width: 238px;
+    max-height: 341px;
+}
+
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.688rem;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10%;
+
+    color: #000000;
+
+    padding-top: 15px; 
+}
+
+.person-title {
+    font-family: 'PT Serif';
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    writing-mode: tb-rl;
+    display: inline-block;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.first-figure > p {
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.second-figure > p {
+    position: relative;
+    padding-bottom: 70px;
+}
+
+.third-figure > p {
+    position: relative;
+    padding-bottom: 90px;
+}
+
+.fourth-figure > p {
+    position: relative;
+    padding-bottom: 75px;
+}
+
+.fifth-figure > p {
+    position: relative;
+    padding-bottom: 85px;
+}
+
+.sixth-figure > p {
+    position: relative;
+    padding-bottom: 80px;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 992px) {
+    .first-row {
+        margin-top: 58px;
+    } 
+
+    
+    img {
+        width: 158px;
+        height: 229px;
+    }
+
+    h4 {
+        font-size: 1rem;
+        line-height: 1.4rem;
+        padding-top: 12px;
+        margin-left: 5px;
+    }
+
+    .person-title {
+        font-size: 0.7rem;
+        line-height: 0.9rem;
+    }
+
+    .first-figure > p {
+        position: relative;
+        padding-bottom: 3px;
+    }
+    
+    .second-figure > p {
+        position: relative;
+        padding-bottom: 23px;
+    }
+    
+    .third-figure > p {
+        position: relative;
+        padding-bottom: 38px;
+    }
+    
+    .fourth-figure > p {
+        position: relative;
+        padding-bottom: 25px;
+    }
+    
+    .fifth-figure > p {
+        position: relative;
+        padding-bottom: 36px;
+    }
+    
+    .sixth-figure > p {
+        position: relative;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .first-row {
+        margin-top: 38px;
+    } 
+
+    .second-figure {
+        padding-top: 50px;
+    }
+
+    .third-figure {
+        padding-top: 0px;
+    }
+
+    .fourth-figure {
+        padding-top: 0px;
+    }
+
+    .fifth-figure {
+        padding-top: 60px;
+    }
+
+    .sixth-figure {
+        margin-top: 0px;
+    }
+
+    img {
+        width: 138px;
+        height: 219px;
+    }
+
+    h4 {
+        font-size: 0.875rem;
+        line-height: 1.313rem;
+        padding-top: 10px;
+        margin-left: 3px;
+    }
+
+    .person-title {
+        font-size: 0.625rem;
+        line-height: 0.813rem;
+        margin: 0;
+    }
+
+    .first-figure > p {
+        position: relative;
+        padding-bottom: 15px;
+    }
+    
+    .second-figure > p {
+        position: relative;
+        padding-bottom: 30px;
+    }
+    
+    .third-figure > p {
+        position: relative;
+        padding-bottom: 48px;
+    }
+    
+    .fourth-figure > p {
+        position: relative;
+        padding-bottom: 34px;
+    }
+    
+    .fifth-figure > p {
+        position: relative;
+        padding-bottom: 44px;
+    }
+    
+    .sixth-figure > p {
+        position: relative;
+        padding-bottom: 38px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .fifth-figure {
+        padding-top: 0px;
+        margin-top: -45px;
+    }
+
+    h4 {
+        font-size: 0.75rem;
+        line-height: 1.2rem;
+        padding-top: 8px;
+        margin-left: 45px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container-article {
+        padding: 0 8px;
+    }
+
+    .col-sm-4 {
+        padding: 0 8px;;
+    }
+
+    h4 {
+        padding-top: 6px;
+        margin-left: 4px;
+    }
+}
+
+@media screen and (max-width: 351px) {
+    .container-article {
+        padding: 0 4px;
+    }
+
+    .col-sm-4 {
+        padding: 0 5px;;
+    }
+
+    img {
+        width: 118px;
+        height: 200px;
+    }
+
+    h4 {
+        padding-top: 4px;
+        margin-left: 10px;
+    }
+
+    .first-figure > p {
+        position: relative;
+        padding-bottom: 4px;
+    }
+    
+    .second-figure > p {
+        position: relative;
+        padding-bottom: 16px;
+    }
+    
+    .third-figure > p {
+        position: relative;
+        padding-bottom: 33px;
+    }
+    
+    .fourth-figure > p {
+        position: relative;
+        padding-bottom: 22px;
+    }
+    
+    .fifth-figure > p {
+        position: relative;
+        padding-bottom: 28px;
+    }
+    
+    .sixth-figure > p {
+        position: relative;
+        padding-bottom: 24px;
+    }
+}
