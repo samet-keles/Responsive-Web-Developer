@@ -25,6 +25,7 @@
   - [Built With](#built-with)
 - [Features](#features)
 - [Contact](#contact)
+- [License](#license)
 
 ## Overview
 
@@ -53,3 +54,7 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 - LinkedIn [Samet Keles](https://www.linkedin.com/in/samet-keles/)
 - GitHub [@sametkeles06](https://https://github.com/sametkeles06)
+
+## **License**
+
+- [MIT](https://choosealicense.com/licenses/mit/)
