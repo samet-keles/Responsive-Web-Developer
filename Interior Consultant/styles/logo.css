@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap");
+
+.rectangle {
+  border: 1px solid #ffffff;
+  display: inline-block;
+  padding: var(--space-sm);
+}
+
+.rectangle a {
+  font-family: "Crimson Pro", serif;
+  font-size: var(--text-sm);
+  line-height: 1rem;
+  text-align: center;
+  color: var(--primary-color);
+  text-transform: uppercase;
+}

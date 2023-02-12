@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interior Consultant</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link
+      rel="shortcut icon"
+      href="/images/devchallenges.png"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/57cc7dd91f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- CONTAINER START -->
+    <div id="container" class="container">
+      <!-- Header Start -->
+      <header class="header">
+        <div class="logo rectangle">
+          <a href="index.html">This Interior</a>
+        </div>
+
+        <!-- Navigation Start -->
+        <nav class="navigation">
+          <!-- Responsive Menu start -->
+          <div id="myResponsiveNav" class="responsive-nav">
+            <a href="#home">Home</a>
+            <a href="#collection">Collection</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          </div>
+          <!-- Responsive Menu End -->
+
+          <ul class="navigation-ul">
+            <li class="navigation-li">
+              <a href="#home" class="active">Home</a>
+            </li>
+            <li class="navigation-li">
+              <a href="#collection">Collection</a>
+            </li>
+            <li class="navigation-li">
+              <a href="#about">About</a>
+            </li>
+            <li class="navigation-li">
+              <a href="#contact">Contact</a>
+            </li>
+            <label for="burger" class="burger" onclick="openNav()">
+              <input id="burger" type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+          </ul>
+        </nav>
+        <!-- Navigation End -->
+      </header>
+      <!-- Header End -->
+
+      <!--Hero Container Start -->
+      <main class="main grid-container">
+        <!-- Left Article Start -->
+        <article class="left-side grid-left-item">
+          <h1>Modern interior</h1>
+          <p>
+            A full-Service residential & commercial interior design and staging
+            company offering professional organizing & eco-services.
+          </p>
+          <div class="read-more-div">
+            <span>Read more</span>
+            <i class="fa-solid fa-right-long"></i>
+          </div>
+          </article>
+        <!-- Left Article End -->
+
+        <!-- Right Article Start -->
+        <article class="right-side grid-right-item">
+          <img src="/images/photo1.png" alt="Home" />
+          <div class="card">
+            <div class="wrapper">
+              <img src="/images/photo2.png" alt="person" />
+              <div class="card-title">
+                <h6>Aliza Webber</h6>
+                <p>Interior designer</p>
+              </div>
+            </div>
+            <p>Designed in 2020 by Aliza Webber</p>
+          </div>
+        </article>
+        <!-- Right Article End -->
+      </main>
+      <!--Hero Container End -->
+
+      <!-- Footer Start -->
+    <footer class="footer">
+        <span class="footer-content">
+            created by
+            <a href="https://github.com/sametkeles06" class="footer-username" target="_blank">&nbsp;sametkeles06&nbsp;<a>
+            - devChallenges.io
+        </span>
+    </footer>
+    <!-- Footer End -->
+    </div>
+    <!-- CONTAINER END -->
+
+    <!-- Script file -->
+    <script src="burgerMenu.js"></script>
+  </body>
+</html>

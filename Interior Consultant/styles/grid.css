@@ -1,0 +1,25 @@
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 42px 77px 24px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 31% 59%;
+  column-gap: 11%;
+  padding-top: 170px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 576px) {
+  .container {
+    padding: 19px 13px 24px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 100%;
+    padding-top: 38px;
+  }
+}
