@@ -33,7 +33,7 @@
 
 - The objective of this project is to create a responsive 404 error page that adheres to the established design specifications.
 
-- To see a live demo of the project, click on the provided <a href="http://devchallenges.io" target="_blank">link.</a>
+- To see a live demo of the project, click on the provided <a href="https://404-not-found-sametkeles.netlify.app/" target="_blank">link.</a>
 
 - During the development of the project, I employed the use of rem units to ensure that the dimensions were both dynamic and responsive. To improve readability, I also separated the style files into manageable chunks. Given the simplicity of the project's structure, I chose not to extensively divide the style files. However, for future projects with more complex structures, I plan to use a component-based approach for organizing the style files.
 
