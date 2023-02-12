@@ -35,7 +35,7 @@
 
 The aim of this project is to create a responsive my team page in accordance with the specified design specifications.
 
-- To see a live demo of the project, click on the provided <a href="http:https://my-team-page-sametkeles.netlify.app/" target="_blank">link.</a>
+- To see a live demo of the project, click on the provided <a href="https://my-team-page-sametkeles.netlify.app/" target="_blank">link.</a>
 - During the development of this project, I gained the skill to properly align text in a vertical orientation.
 
 ### Built With 🛠
