@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+
+.footer {
+  position: relative;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.footer-content {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: var(--grey-3);
+}
+
+.footer-username {
+  text-decoration: none;
+  color: var(--grey-3);
+}
+
+.footer-username:hover {
+  font-weight: 700;
+  color: var(--grey-1);
+}

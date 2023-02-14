@@ -1,0 +1,35 @@
+.container {
+  padding-top: calc(32px + (52 - 32) * ((100vw - 375px) / (1440 - 375)));
+  padding-right: calc(11px + (236 - 11) * ((100vw - 375px) / (1440 - 375)));
+  padding-bottom: 24px;
+  padding-left: calc(11px + (236 - 11) * ((100vw - 375px) / (1440 - 375)));
+}
+
+.header-title {
+  display: grid;
+  grid-template-columns: 8.333% 8.333% 8.333% 8.333% 8.333% 8.333% 8.333% 8.333% 8.333% 8.333% 8.333% 8.333%;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: 8.333% 8.333% 8.333% 8.333% 8.333% 8.333% 8.333% 8.333% 8.333% 8.333% 8.333% 8.333%;
+}
+
+.col-3 {
+  grid-column: 10 / 13;
+}
+
+.col-8 {
+  grid-column: 1 / 9;
+}
+
+@media screen and (max-width: 768px) {
+  .col-3 {
+    grid-column: 1 / 13;
+    order: -1;
+  }
+
+  .col-8 {
+    grid-column: 1 / 13;
+  }
+}

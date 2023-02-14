@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&display=swap");
+
+.section h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: var(--text-xl);
+  line-height: var(--line-xl);
+
+  color: var(--grey-1);
+  margin-bottom: calc(13px + (32 - 13) * ((100vw - 375px) / (1440 - 375)));
+}
+
+.section h6 {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: var(--text-lg);
+  line-height: var(--line-lg);
+
+  color: var(--grey-1);
+  margin-bottom: calc(23px + (30 - 23) * ((100vw - 375px) / (1440 - 375)));
+}
+
+.ingredients-form h6 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+b {
+  color: var(--grey-1);
+}
+
+.ingredients-form label {
+  font-family: var(--font);
+  font-weight: 400;
+  font-size: var(--text-md);
+  line-height: 156%;
+
+  color: var(--grey-1);
+}
+
+.ingredients-form input {
+  accent-color: var(--grey-3);
+}
+
+.card {
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding-top: calc(26px + (57 - 26) * ((100vw - 768px) / (1440 - 768)));
+  padding-right: calc(23px + (51 - 23) * ((100vw - 768px) / (1440 - 768)));
+  padding-bottom: calc(4px + (7 - 4) * ((100vw - 768px) / (1440 - 768)));
+  padding-left: calc(19px + (43 - 19) * ((100vw - 768px) / (1440 - 768)));
+
+  position: sticky;
+  top: calc((24px + (48 - 24) * ((100vw - 375px) / (1440 - 375))));
+}
+
+.yields {
+  display: flex;
+}
+
+.yellow-icon {
+  color: #f2994a;
+}
+
+.grey-icon {
+  color: var(--grey-2);
+}
+
+.prep-time {
+  display: flex;
+}
+
+.cook-time {
+  display: flex;
+}
+
+.total-time {
+  display: flex;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: calc(8px + (14 - 8) * ((100vw - 768px) / (1440 - 768)));
+  margin-bottom: calc(19px + (43 - 19) * ((100vw - 768px) / (1440 - 768)));
+}
+
+.info-title {
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: var(--text-xs);
+  line-height: var(--line-xs);
+  text-transform: uppercase;
+
+  color: var(--grey-4);
+  margin-bottom: 4px;
+}
+
+.info {
+  font-family: var(--font);
+  font-weight: 500;
+  font-size: var(--text-sm);
+  line-height: var(--line-sm);
+  color: var(--grey-1);
+}
+
+.yellow-text {
+  color: #f2994a;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    box-shadow: none;
+    height: calc(80px + (140 - 80) * ((100vw - 375px) / (1440 - 375)));
+    padding: 0;
+    margin-bottom: calc(30px + (50 - 30) * ((100vw - 375px) / (1440 - 375)));
+  }
+
+  .yields {
+    display: flex;
+    height: fit-content;
+    align-self: flex-start;
+    margin-bottom: 18px;
+  }
+  .other-card-items {
+    height: fit-content;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+  .prep-time {
+    margin-right: 9%;
+  }
+
+  .cook-time {
+    margin-right: 9%;
+  }
+
+  .total-time {
+    margin-right: 9%;
+  }
+}
