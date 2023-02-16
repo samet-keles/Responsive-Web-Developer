@@ -1,0 +1,10 @@
+.header {
+  margin-bottom: calc(21px + (51 - 21) * ((100vw - 375px) / (1440 - 375)));
+}
+
+.header-title {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  line-height: var(--line-lg);
+  color: #4e5150;
+}

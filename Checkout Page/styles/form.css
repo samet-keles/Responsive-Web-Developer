@@ -1,0 +1,165 @@
+.contact {
+  margin-bottom: calc(45px + (58 - 45) * ((100vw - 375px) / (1440 - 375)));
+}
+
+.form-title {
+  font-size: var(--text-md);
+  line-height: var(--line-md);
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 13px;
+}
+
+label {
+  font-size: var(--text-xs);
+  line-height: var(--line-xs);
+  font-weight: 600;
+  color: #4f4f4f;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.form input::placeholder,
+select,
+option {
+  font-size: var(--text-sm);
+  line-height: var(--line-sm);
+  font-weight: 600;
+  color: #828282;
+}
+
+.two-area {
+  display: flex;
+  justify-content: space-between;
+}
+
+input:not(.postal-code, .save, .submit) {
+  width: 100%;
+  height: calc(40px + (56 - 40) * ((100vw - 375px) / (1440 - 375)));
+  border: 1px solid #828282;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+input:not(.save, .submit) {
+  font-family: var(--font);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: #636363;
+}
+
+.form input:focus,
+select:focus {
+  outline-color: #f2994a;
+}
+
+select,
+.postal-code {
+  width: calc(162px + (216 - 162) * ((100vw - 375px) / (1440 - 375)));
+  height: calc(40px + (56 - 40) * ((100vw - 375px) / (1440 - 375)));
+  border: 1px solid #828282;
+  border-radius: 12px;
+}
+
+.save {
+  cursor: pointer;
+  accent-color: rgba(255, 98, 0, 0.795);
+  margin-top: 20px;
+}
+
+.submit {
+  background-color: #f2994a;
+  border: 0;
+  border-radius: 12px;
+  font-size: var(--text-sm);
+  line-height: var(--line-sm);
+  font-weight: 600;
+  color: #ffffff;
+  width: 166px;
+  height: 54px;
+  float: right;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: #ff8c28;
+}
+
+input[placeholder="Rodney Cotton"]::placeholder {
+  color: #333333;
+}
+
+input[name="email"] {
+  background-image: url(/images/mail.svg);
+  background-position: left 12px center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  padding-left: calc(40px + (52 - 40) * ((100vw - 375px) / (1440 - 375)));
+}
+
+input[name="phone"] {
+  background-image: url(/images/phone.svg);
+  background-position: left 12px center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  padding-left: calc(40px + (52 - 40) * ((100vw - 375px) / (1440 - 375)));
+}
+
+input[name="fname"] {
+  background-image: url(/images/user.svg);
+  background-position: left 12px center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  padding-left: calc(40px + (52 - 40) * ((100vw - 375px) / (1440 - 375)));
+}
+
+input[name="address"] {
+  background-image: url(/images/home.svg);
+  background-position: left 12px center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  padding-left: calc(40px + (52 - 40) * ((100vw - 375px) / (1440 - 375)));
+}
+
+input[name="city"] {
+  background-image: url(/images/city.svg);
+  background-position: left 12px center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  padding-left: calc(40px + (52 - 40) * ((100vw - 375px) / (1440 - 375)));
+}
+
+select[name="country"] {
+  background-image: url(/images/country.svg);
+  background-position: left 12px center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  padding-left: calc(40px + (52 - 40) * ((100vw - 375px) / (1440 - 375)));
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+input[name="postal-code"] {
+  background-image: url(/images/postal.svg);
+  background-position: left 12px center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  padding-left: calc(40px + (52 - 40) * ((100vw - 375px) / (1440 - 375)));
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: rgba(255, 98, 0, 0.795);
+  -webkit-box-shadow: 0 0 0px 1000px #ffecdc7e inset;
+  transition: background-color 5000s ease-in-out 0s;
+}

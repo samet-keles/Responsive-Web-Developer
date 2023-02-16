@@ -1,0 +1,118 @@
+.card {
+  width: calc(350px + (383 - 350) * ((100vw - 375px) / (1440 - 375)));
+  height: calc(490px + (535 - 490) * ((100vw - 375px) / (1440 - 375)));
+  border-radius: 12px;
+  background-color: #f2f2f2;
+  padding: 32px 25px 16px 27px;
+}
+
+.item {
+  display: flex;
+}
+
+.item-shoes {
+  margin-top: 29px;
+}
+
+.item-img img {
+  font-size: calc(123px + (135 - 123) * ((100vw - 375px) / (1440 - 375)));
+  width: 1em;
+  height: 1em;
+  border-radius: 12px;
+  margin-right: 19px;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-title {
+  font-size: var(--text-sm);
+  line-height: var(--line-sm);
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.item-price {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 32px;
+}
+
+.new-price {
+  font-size: var(--text-sm);
+  line-height: var(--line-sm);
+  font-weight: 600;
+  margin-right: 1vw;
+  color: #f2994a;
+}
+
+.old-price {
+  font-size: var(--text-xs);
+  line-height: var(--line-xs);
+  font-weight: 600;
+  text-decoration: line-through;
+  color: #4e5150;
+}
+
+.piece-box {
+  width: 129px;
+  height: 51px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #828282;
+  border-radius: 12px;
+}
+
+.piece-box div {
+  width: 20px;
+  height: 20px;
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  color: #828282;
+  cursor: pointer;
+}
+
+.piece-box div:hover {
+  background-color: #c2c1c1;
+  color: #e9e7e7;
+}
+
+.piece-number {
+  font-size: var(--text-sm);
+  line-height: var(--line-sm);
+  font-weight: 600;
+  color: #333333;
+}
+
+.price-box {
+  margin-top: 88px;
+}
+
+.shipping-box,
+.total-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-top: 1px solid #bdbdbd;
+  padding: 11px 0;
+}
+
+.price-text {
+  font-size: var(--text-md);
+  line-height: var(--line-md);
+  color: #333333;
+}
+
+.price-number {
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+}

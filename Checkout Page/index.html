@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/images/devchallenges.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <title>Checkout Page</title>
+  </head>
+  <body>
+    <div id="message" class="">
+      <!-- Alert Message-->
+    </div>
+    <main class="container">
+      <header class="header">
+        <!-- Header Start-->
+        <h1 class="header-title">Checkout</h1>
+      </header>
+      <!-- Header End-->
+      <div class="hero-container">
+        <!--Hero Container Start-->
+        <aside class="aside col-6">
+          <!-- Left Side Start-->
+          <form class="form" action="" onsubmit="alert(event)">
+            <div class="contact">
+              <h2 class="form-title">Contact infomation</h2>
+              <label for="email">E-mail</label><br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email..."
+                required
+              /><br />
+              <label for="phone">Phone</label><br />
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter your phone..."
+                required
+              />
+            </div>
+            <div class="shipping">
+              <h2 class="form-title">Shipping address</h2>
+              <label for="fname">Full name</label><br />
+              <input
+                type="text"
+                id="fname"
+                name="fname"
+                placeholder="Rodney Cotton"
+                required
+              /><br />
+              <label for="address">Address</label><br />
+              <input
+                type="text"
+                id="address"
+                name="address"
+                placeholder="Your address.."
+                required
+              /><br />
+              <label for="city">City</label><br />
+              <input
+                type="text"
+                id="city"
+                name="city"
+                placeholder="Your city.."
+                required
+              /><br />
+              <div class="two-area">
+                <div class="country-area">
+                  <label for="country">Country</label><br />
+
+                  <select id="country" name="country" required>
+                    <option selected disabled>Your Country..</option>
+                    <option placeholder="Ukraine">Ukraine</option>
+                    <option placeholder="Syria">Syria</option>
+                    <option placeholder="Turkey">Turkey 💖</option>
+                  </select>
+                </div>
+                <div class="postal-code-area">
+                  <label for="postal-code">Postal code</label><br />
+                  <input
+                    class="postal-code"
+                    type="text"
+                    id="postal-code"
+                    name="postal-code"
+                    placeholder="Your postal code.."
+                  />
+                </div>
+              </div>
+              <input
+                class="save"
+                type="checkbox"
+                id="save"
+                name="save"
+                value="save"
+              />
+              <label for="save">Save this information for next time</label
+              ><br />
+              <input class="submit" type="submit" value="Continue" />
+            </div>
+          </form>
+        </aside>
+        <!-- Left Side End-->
+        <div class="card col-5">
+          <!-- Card Start-->
+          <div class="item item-backbag">
+            <!-- Backbag item-->
+            <div class="item-img">
+              <img src="/images/photo1.png" alt="Backbag" />
+            </div>
+            <div class="item-info">
+              <!-- Backbag info-->
+              <h3 class="item-title">Vintage Backbag</h3>
+              <div class="item-price">
+                <p id="newPriceBackbag" class="new-price">$54.99</p>
+                <p id="oldPriceBackbag" class="old-price">$94.99</p>
+              </div>
+              <div class="piece-box">
+                <!-- Backbag piece Box-->
+                <div class="minus-box" onclick="backBagMinus()">-</div>
+                <p id="backbag" class="piece-number" value="1">1</p>
+                <div class="plus-box" onclick="backBagPlus()">+</div>
+              </div>
+            </div>
+          </div>
+          <div class="item item-shoes">
+            <!-- Shoes item-->
+            <div class="item-img">
+              <img src="/images/photo2.png" alt="Shoes" />
+            </div>
+            <div class="item-info">
+              <!-- Shoes info-->
+              <h3 class="item-title">Levi Shoes</h3>
+              <div class="item-price">
+                <p id="newPriceShoes" class="new-price">$74.99</p>
+                <p id="oldPriceShoes" class="old-price">$124.99</p>
+              </div>
+              <div class="piece-box">
+                <!-- Shoes Piece Box-->
+                <div class="minus-box" onclick="shoesMinus()">-</div>
+                <p id="shoes" class="piece-number">1</p>
+                <div class="plus-box" onclick="shoesPlus()">+</div>
+              </div>
+            </div>
+          </div>
+          <div class="price-box">
+            <!-- Price Box-->
+            <div class="shipping-box">
+              <p class="price-text">Shipping</p>
+              <p id="shipping" class="price-number">$19</p>
+            </div>
+            <div class="total-box">
+              <p class="price-text">Total</p>
+              <p id="total" class="price-number">$148.98</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card End-->
+      </div>
+      <!--Hero Container End-->
+
+      <footer class="footer">
+        <!-- Footer Start -->
+        <p>
+          created by
+          <a
+            href="https://github.com/sametkeles06https://github.com/sametkeles06"
+            >sametkeles06</a
+          >
+          - devChallenges.io
+        </p>
+      </footer>
+      <!-- Footer End -->
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

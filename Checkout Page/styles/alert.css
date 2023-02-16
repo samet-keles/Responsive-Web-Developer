@@ -1,0 +1,24 @@
+.alert {
+  padding: 20px;
+  margin: 0 calc(13px + (240 - 13) * ((100vw - 375px) / (1440 - 375)));
+  background-color: #ff8c28;
+  color: white;
+  position: sticky;
+  top: 0;
+  font-family: var(--font);
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 32px;
+  line-height: 22px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: rgb(58, 58, 58);
+}
