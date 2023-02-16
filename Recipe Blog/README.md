@@ -51,7 +51,7 @@ This application/site was created as a submission to a [DevChallenges](https://d
 ## Contact
 
 - LinkedIn [Samet Keles](https://www.linkedin.com/in/samet-keles/)
-- GitHub [@sametkeles06](https://https://github.com/sametkeles06)
+- GitHub [@sametkeles06](https://github.com/sametkeles06)
 
 ## **License**
 
