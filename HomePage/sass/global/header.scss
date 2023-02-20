@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@800&display=swap");
+
+.Header {
+  height: $header-height;
+
+  @include mq("tablet") {
+    height: $header-height * 1.5;
+  }
+  @include mq("desktop") {
+    height: $header-height * 1.8;
+  }
+
+  @include mq("large") {
+    height: $header-height * 2;
+  }
+
+  .container {
+    position: relative;
+    padding-top: $space;
+
+    @include mq("tablet") {
+      padding-top: $space * 1.6;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    @include mq("desktop") {
+      padding-top: $space * 2.5;
+    }
+
+    @include mq("large") {
+      padding-top: $space * 3;
+    }
+  }
+
+  &-logo {
+    font-family: "Heebo", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.4rem;
+    color: $grey-1;
+
+    @include mq("tablet") {
+      font-size: 2.8rem;
+    }
+    @include mq("desktop") {
+      font-size: 3rem;
+    }
+    @include mq("large") {
+      font-size: 3.6rem;
+    }
+  }
+
+  &-navigation {
+    position: relative;
+    z-index: -1;
+    opacity: 0;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 30px 10px rgba(black, 0.3);
+    border-radius: 12px;
+    transform: translate(110%, -110%);
+    transition: 0.4s ease-in-out;
+
+    @include mq("tablet") {
+      opacity: 1;
+      z-index: 0;
+      flex-direction: row;
+      box-shadow: 0 0;
+      transform: translate(0, 0);
+      transition: 0ms;
+      transform: translate(0);
+    }
+
+    & > a {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding-bottom: $space;
+      font-size: 1.6rem;
+      color: $grey-1;
+
+      &:hover {
+        color: $blue;
+      }
+
+      @include mq("tablet") {
+        width: auto;
+        padding-left: $space * 1.2;
+        padding-bottom: 0;
+        font-size: 1.8rem;
+      }
+
+      @include mq("desktop") {
+        padding-left: $space * 1.5;
+        font-size: 2rem;
+        font-weight: 500;
+      }
+
+      @include mq("large") {
+        padding-left: $space * 1.8;
+        font-size: 2.4rem;
+      }
+    }
+  }
+
+  .is-show {
+    transform: translate(0);
+  }
+
+  &-btn {
+    position: absolute;
+    right: $offset;
+    top: $space;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #000;
+    background-color: transparent;
+
+    @include mq("tablet") {
+      display: none;
+    }
+  }
+}

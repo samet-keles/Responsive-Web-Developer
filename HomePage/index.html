@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="shortcut icon"
+      href="img/devchallenges.png"
+      type="image/x-icon"
+    />
+    <title>Edie Homepage</title>
+  </head>
+  <body>
+    <header class="Header">
+      <!-- Header Strat -->
+      <div class="container">
+        <a href="#index.html" class="Header-logo">Edie</a>
+        <nav id="headerNav" class="Header-navigation">
+          <!-- Navigation-->
+          <a href="" class="Header-navigation-home">Home</a>
+          <a href="" class="Header-navigation-services">Services</a>
+          <a href="" class="Header-navigation-ourworks">Our Works</a>
+          <a href="" class="Header-navigation-clients">Clients</a>
+          <a href="" class="Header-navigation-contact">Contact</a>
+        </nav>
+        <button type="button" class="Header-btn" onclick="menuClick()">
+          <i class="fa-solid fa-bars Header-btn-icon"></i>
+        </button>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <main class="Hero">
+      <!--Hero Content Start-->
+      <div class="container">
+        <article class="wrapper">
+          <p class="Hero-text">Unhappy with your website?</p>
+          <h2 class="Hero-topTitle">
+            We create beautiful and fast web services
+          </h2>
+          <figure class="Hero-arc">
+            <!-- Ascpect Ratio Container-->
+            <img src="/img/heroImage.png" alt="team" class="Hero-arc-image" />
+          </figure>
+          <h2 class="Hero-botTitle">Story, emotion and purpose</h2>
+          <p class="Hero-description">
+            We help transform your ideas into real world applications that will
+            outperform your toughest competition and help you achieve your
+            strategic goals in short period of time.
+          </p>
+          <label id="notification" for="email" class="Hero-label"
+            >Want us to contact you?</label
+          >
+          <form class="Hero-form" onsubmit="message(event)">
+            <div class="Hero-form-box">
+              <input
+                id="email"
+                type="email"
+                class="Hero-form-box-input"
+                placeholder="Email"
+                required
+              />
+              <button class="Hero-form-box-btn" type="submit">Join</button>
+            </div>
+          </form>
+        </article>
+      </div>
+    </main>
+    <!--Hero Content Start-->
+
+    <!-- icon Script -->
+    <script
+      src="https://kit.fontawesome.com/57cc7dd91f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="/js/main.js"></script>
+  </body>
+</html>

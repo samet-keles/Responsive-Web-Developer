@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: $max-width;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $offset;
+  padding-left: $offset;
+}
+
+.blue-text {
+  font-weight: 500;
+  color: $blue;
+}
+
+.main-title {
+  color: $grey-1;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 3rem;
+
+  @include mq("tablet") {
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+  }
+
+  @include mq("desktop") {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+  @include mq("large") {
+    font-size: 4.8rem;
+    line-height: 7.2rem;
+  }
+}
