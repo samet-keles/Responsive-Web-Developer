@@ -404,29 +404,140 @@ html {
   color: #2d9cdb;
 }
 
-.main-title, .Hero-botTitle, .Hero-topTitle {
+.main-title, .Cards-title, .Hero-botTitle, .Hero-topTitle {
   color: #333333;
   font-size: 2.4rem;
   font-weight: 500;
   line-height: 3rem;
 }
 @media (min-width: 768px) {
-  .main-title, .Hero-botTitle, .Hero-topTitle {
+  .main-title, .Cards-title, .Hero-botTitle, .Hero-topTitle {
     font-size: 3.2rem;
     line-height: 3.8rem;
   }
 }
 @media (min-width: 992px) {
-  .main-title, .Hero-botTitle, .Hero-topTitle {
+  .main-title, .Cards-title, .Hero-botTitle, .Hero-topTitle {
     font-size: 4rem;
     line-height: 5rem;
   }
 }
 @media (min-width: 1200px) {
-  .main-title, .Hero-botTitle, .Hero-topTitle {
+  .main-title, .Cards-title, .Hero-botTitle, .Hero-topTitle {
     font-size: 4.8rem;
     line-height: 7.2rem;
   }
+}
+
+@media (min-width: 768px) {
+  .Join {
+    max-width: 41rem;
+  }
+}
+@media (min-width: 992px) {
+  .Join {
+    max-width: 65rem;
+  }
+}
+@media (min-width: 1200px) {
+  .Join {
+    max-width: 71rem;
+  }
+}
+.Join-label {
+  display: inline-block;
+  user-select: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+  color: #828282;
+}
+@media (min-width: 768px) {
+  .Join-label {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  .Join-label {
+    font-size: 1.4rem;
+  }
+}
+.Join-label-success {
+  color: #2d9cdb;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+@media (min-width: 992px) {
+  .Join-label-success {
+    font-size: 1.8rem;
+  }
+}
+.Join-form-box {
+  display: flex;
+  border-radius: 12px;
+  padding: 0.4rem 0.4rem 0.4rem 1.5rem;
+  background-color: #f2f2f2;
+}
+.Join-form-box:focus-within {
+  outline: 1px solid #2d9cdb;
+}
+.Join-form-box-input {
+  min-width: 120px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  border-radius: 12px;
+  flex-grow: 2;
+  border: none;
+  color: #4f4f4f;
+  background-color: #f2f2f2;
+}
+.Join-form-box-input::placeholder {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #bdbdbd;
+}
+@media (min-width: 992px) {
+  .Join-form-box-input::placeholder {
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 1200px) {
+  .Join-form-box-input::placeholder {
+    font-size: 1.8rem;
+  }
+}
+.Join-form-box-input:focus {
+  outline: none;
+}
+.Join-form-box-btn {
+  min-height: 4rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 0.8em 1.5em;
+  border-radius: 12px;
+  cursor: pointer;
+  color: #f2f2f2;
+  background-color: #2d9cdb;
+}
+@media (min-width: 768px) {
+  .Join-form-box-btn {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 992px) {
+  .Join-form-box-btn {
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 1200px) {
+  .Join-form-box-btn {
+    font-size: 1.8rem;
+  }
+}
+.Join-form-box-btn:hover {
+  color: #fff;
+  background-color: #298dc7;
 }
 
 .Header {
@@ -500,7 +611,7 @@ html {
   flex-direction: column;
   box-shadow: 0 30px 10px rgba(0, 0, 0, 0.3);
   border-radius: 12px;
-  transform: translate(110%, -110%);
+  transform: translate(110%, -130%);
   transition: 0.4s ease-in-out;
 }
 @media (min-width: 768px) {
@@ -564,6 +675,15 @@ html {
   }
 }
 
+.Hero {
+  min-height: calc(100vh - 200px);
+  margin-bottom: 10rem;
+}
+@media (min-width: 768px) {
+  .Hero {
+    min-height: calc(100vh - 250px);
+  }
+}
 .wrapper > :not(.Hero-arc) {
   padding-right: 3rem;
   padding-left: 3rem;
@@ -696,117 +816,115 @@ html {
 }
 @media (min-width: 1200px) {
   .Hero-description {
-    max-width: 78ch;
+    max-width: 70ch;
     padding-bottom: 4.2rem;
     line-height: 2.7rem;
   }
 }
-.Hero-label {
-  display: inline-block;
-  font-size: 1rem;
-  font-weight: 500;
-  padding-bottom: 0.5rem;
-  color: #828282;
+
+.Cards-title {
+  max-width: 24ch;
+  padding-right: 5.1rem;
+  padding-left: 5.1rem;
+  margin-bottom: 4.5rem;
 }
 @media (min-width: 768px) {
-  .Hero-label {
-    font-size: 1.2rem;
-    padding-bottom: 1rem;
-  }
-}
-@media (min-width: 992px) {
-  .Hero-label {
-    font-size: 1.4rem;
-  }
-}
-.Hero-label-success {
-  color: #2d9cdb;
-  font-size: 1.4rem;
-  font-weight: 400;
-}
-@media (min-width: 992px) {
-  .Hero-label-success {
-    font-size: 1.8rem;
+  .Cards-title {
+    margin-bottom: 6rem;
   }
 }
 @media (min-width: 768px) {
-  .Hero-form {
-    max-width: 38rem;
+  .Cards-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
 @media (min-width: 992px) {
-  .Hero-form {
-    max-width: 65rem;
+  .Cards-box {
+    flex-wrap: nowrap;
   }
 }
-@media (min-width: 1200px) {
-  .Hero-form {
-    max-width: 80rem;
-  }
-}
-.Hero-form-box {
-  display: flex;
-  border-radius: 12px;
-  padding: 0.4rem 0.4rem 0.4rem 1.5rem;
-  background-color: #f2f2f2;
-}
-.Hero-form-box:focus-within {
-  outline: 1px solid #2d9cdb;
-}
-.Hero-form-box-input {
-  min-width: 120px;
-  font-size: 1.4rem;
-  font-weight: 500;
-  border-radius: 12px;
-  flex-grow: 2;
-  border: none;
-  color: #4f4f4f;
-  background-color: #f2f2f2;
-}
-.Hero-form-box-input::placeholder {
-  font-size: 1.4rem;
-  font-weight: 500;
-  color: #bdbdbd;
-}
-@media (min-width: 992px) {
-  .Hero-form-box-input::placeholder {
-    font-size: 1.6rem;
-  }
-}
-@media (min-width: 1200px) {
-  .Hero-form-box-input::placeholder {
-    font-size: 1.8rem;
-  }
-}
-.Hero-form-box-input:focus {
-  outline: none;
-}
-.Hero-form-box-btn {
-  min-height: 4rem;
-  font-size: 1.4rem;
-  font-weight: 500;
-  padding: 0.8em 1.5em;
-  border-radius: 12px;
+.Cards-box-item {
+  padding: 5rem 3.4rem 4.2rem;
   cursor: pointer;
-  color: #f2f2f2;
+  margin-bottom: 7.6rem;
+  border-radius: 24px;
+  user-select: none;
+  background-color: #ffffff;
+}
+@media (min-width: 768px) {
+  .Cards-box-item {
+    width: calc(50% - 6.8rem);
+    margin-bottom: 3.6rem;
+  }
+}
+@media (min-width: 992px) {
+  .Cards-box-item {
+    width: 100%;
+  }
+  .Cards-box-item + .Cards-box-item {
+    margin-left: 25px;
+  }
+}
+@media (min-width: 1200px) {
+  .Cards-box-item + .Cards-box-item {
+    margin-left: 50px;
+  }
+}
+.Cards-box-item:hover {
+  box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+}
+.Cards-box-item:hover .Cards-box-item-button {
+  cursor: pointer;
+  color: #ffffff;
   background-color: #2d9cdb;
 }
-@media (min-width: 768px) {
-  .Hero-form-box-btn {
-    font-size: 1.4rem;
-  }
+.Cards-box-item-icon {
+  font-size: 6.7rem;
+  width: 1em;
+  height: 1em;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3.5rem;
 }
-@media (min-width: 992px) {
-  .Hero-form-box-btn {
-    font-size: 1.6rem;
-  }
+.Cards-box-item .icon {
+  font-size: 3.2rem;
+  width: 1em;
+  height: 1em;
+  fill: #ffffff;
 }
-@media (min-width: 1200px) {
-  .Hero-form-box-btn {
-    font-size: 1.8rem;
-  }
+.Cards-box-item .blue-box {
+  background-color: #2d9cdb;
 }
-.Hero-form-box-btn:hover {
-  color: #fff;
-  background-color: #298dc7;
+.Cards-box-item .green-box {
+  background-color: #27ae60;
+}
+.Cards-box-item .red-box {
+  background-color: #eb5757;
+}
+.Cards-box-item-title {
+  color: #333333;
+  font-size: 2rem;
+  line-height: 3.6rem;
+  font-weight: 700;
+  margin-bottom: 2.4rem;
+}
+.Cards-box-item-description {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+  color: #4f4f4f;
+}
+.Cards-box-item-button {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 500;
+  padding: 0.6em 0.8em;
+  border-radius: 12px;
+  color: #828282;
+  background-color: #e0e0e0;
 }

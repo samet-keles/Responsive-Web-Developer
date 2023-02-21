@@ -61,7 +61,7 @@
     flex-direction: column;
     box-shadow: 0 30px 10px rgba(black, 0.3);
     border-radius: 12px;
-    transform: translate(110%, -110%);
+    transform: translate(110%, -130%);
     transition: 0.4s ease-in-out;
 
     @include mq("tablet") {

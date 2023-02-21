@@ -1,0 +1,115 @@
+.Cards {
+  &-title {
+    @extend .main-title;
+    max-width: 24ch;
+    padding-right: $space * 3.4;
+    padding-left: $space * 3.4;
+    margin-bottom: $space * 3;
+
+    @include mq("tablet") {
+      margin-bottom: $space * 4;
+    }
+  }
+
+  &-box {
+    @include mq("tablet") {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    @include mq("desktop") {
+      flex-wrap: nowrap;
+    }
+
+    &-item {
+      padding: 5rem 3.4rem 4.2rem;
+      cursor: pointer;
+      margin-bottom: 7.6rem;
+      border-radius: 24px;
+
+      user-select: none;
+      background-color: #ffffff;
+
+      @include mq("tablet") {
+        width: calc(50% - 6.8rem);
+        margin-bottom: 3.6rem;
+      }
+
+      @include mq("desktop") {
+        width: 100%;
+        & + & {
+          margin-left: 25px;
+        }
+      }
+
+      @include mq("large") {
+        & + & {
+          margin-left: 50px;
+        }
+      }
+
+      &:hover {
+        box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+
+        .Cards-box-item-button {
+          cursor: pointer;
+          color: #ffffff;
+          background-color: $blue;
+        }
+      }
+
+      &-icon {
+        font-size: 6.7rem;
+        width: 1em;
+        height: 1em;
+        border-radius: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3.5rem;
+      }
+      .icon {
+        font-size: 3.2rem;
+        width: 1em;
+        height: 1em;
+        fill: #ffffff;
+      }
+      .blue-box {
+        background-color: $blue;
+      }
+      .green-box {
+        background-color: $green;
+      }
+      .red-box {
+        background-color: $red;
+      }
+
+      &-title {
+        color: $grey-1;
+        font-size: 2rem;
+        line-height: 3.6rem;
+        font-weight: 700;
+        margin-bottom: 2.4rem;
+      }
+
+      &-description {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        font-weight: 400;
+        margin-bottom: 3rem;
+        color: $grey-2;
+      }
+
+      &-button {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        font-weight: 500;
+        padding: 0.6em 0.8em;
+        border-radius: 12px;
+        color: $grey-3;
+        background-color: $grey-5;
+      }
+    }
+  }
+}

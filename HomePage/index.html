@@ -13,6 +13,33 @@
     <title>Edie Homepage</title>
   </head>
   <body>
+    <!-- Icons-->
+    <svg
+      aria-hidden="true"
+      style="position: absolute; width: 0; height: 0; overflow: hidden"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+    >
+      <defs>
+        <symbol id="icon-code" viewBox="0 0 24 24">
+          <path
+            d="M14.578 16.594l4.641-4.594-4.641-4.594 1.406-1.406 6 6-6 6zM9.422 16.594l-1.406 1.406-6-6 6-6 1.406 1.406-4.641 4.594z"
+          ></path>
+        </symbol>
+        <symbol id="icon-storage" viewBox="0 0 24 24">
+          <path
+            d="M3.984 11.016v1.969h2.016v-1.969h-2.016zM2.016 14.016v-4.031h19.969v4.031h-19.969zM6 6.984v-1.969h-2.016v1.969h2.016zM2.016 3.984h19.969v4.031h-19.969v-4.031zM3.984 17.016v1.969h2.016v-1.969h-2.016zM2.016 20.016v-4.031h19.969v4.031h-19.969z"
+          ></path>
+        </symbol>
+        <symbol id="icon-create" viewBox="0 0 24 24">
+          <path
+            d="M20.719 7.031l-1.828 1.828-3.75-3.75 1.828-1.828q0.281-0.281 0.703-0.281t0.703 0.281l2.344 2.344q0.281 0.281 0.281 0.703t-0.281 0.703zM3 17.25l11.063-11.063 3.75 3.75-11.063 11.063h-3.75v-3.75z"
+          ></path>
+        </symbol>
+      </defs>
+    </svg>
+
     <header class="Header">
       <!-- Header Strat -->
       <div class="container">
@@ -50,25 +77,77 @@
             outperform your toughest competition and help you achieve your
             strategic goals in short period of time.
           </p>
-          <label id="notification" for="email" class="Hero-label"
-            >Want us to contact you?</label
-          >
-          <form class="Hero-form" onsubmit="message(event)">
-            <div class="Hero-form-box">
-              <input
-                id="email"
-                type="email"
-                class="Hero-form-box-input"
-                placeholder="Email"
-                required
-              />
-              <button class="Hero-form-box-btn" type="submit">Join</button>
-            </div>
-          </form>
+          <div class="Join">
+            <!-- Join Component-->
+            <label id="notification" for="email" class="Join-label"
+              >Want us to contact you?</label
+            >
+            <form class="Join-form" onsubmit="message(event)">
+              <div class="Join-form-box">
+                <input
+                  id="email"
+                  type="email"
+                  class="Join-form-box-input"
+                  placeholder="Email"
+                  required
+                />
+                <button class="Join-form-box-btn" type="submit">Join</button>
+              </div>
+            </form>
+          </div>
         </article>
       </div>
     </main>
-    <!--Hero Content Start-->
+    <!--Hero Content End-->
+
+    <section class="Cards">
+      <!-- Cards Start -->
+      <div class="container">
+        <h3 class="Cards-title">We offer high demand services</h3>
+        <article class="Cards-box">
+          <div class="Cards-box-item">
+            <div class="Cards-box-item-icon blue-box">
+              <svg class="icon icon-create">
+                <use xlink:href="#icon-create"></use>
+              </svg>
+            </div>
+            <h3 class="Cards-box-item-title">UI/UX Design</h3>
+            <p class="Cards-box-item-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+              metus ac nulla consequat aliquet id quis turpis.
+            </p>
+            <button class="Cards-box-item-button">Get started</button>
+          </div>
+          <div class="Cards-box-item">
+            <div class="Cards-box-item-icon green-box">
+              <svg class="icon icon-code">
+                <use xlink:href="#icon-code"></use>
+              </svg>
+            </div>
+            <h3 class="Cards-box-item-title">Front End</h3>
+            <p class="Cards-box-item-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+              metus ac nulla consequat aliquet id quis turpis.
+            </p>
+            <button class="Cards-box-item-button">Get started</button>
+          </div>
+          <div class="Cards-box-item">
+            <div class="Cards-box-item-icon red-box">
+              <svg class="icon icon-storage">
+                <use xlink:href="#icon-storage"></use>
+              </svg>
+            </div>
+            <h3 class="Cards-box-item-title">Back End</h3>
+            <p class="Cards-box-item-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+              metus ac nulla consequat aliquet id quis turpis.
+            </p>
+            <button class="Cards-box-item-button">Get started</button>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- Cards End -->
 
     <!-- icon Script -->
     <script
