@@ -1,0 +1,76 @@
+.Quote {
+  margin-bottom: 10rem;
+
+  @include mq("desktop") {
+    margin-bottom: 15rem;
+  }
+
+  @include mq("large") {
+    margin-bottom: 20rem;
+  }
+
+  .container {
+    @include mq("tablet") {
+      padding-right: $space * 3.4;
+      padding-left: $space * 3.4;
+    }
+
+    @include mq("large") {
+      padding-right: $space * 8;
+      padding-left: $space * 8;
+    }
+  }
+  &-blockquote {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    font-weight: 500;
+    color: $grey-1;
+    margin-bottom: 2.7rem;
+
+    @include mq("tablet") {
+      width: 40ch;
+    }
+
+    @include mq("desktop") {
+      margin-bottom: 3.5rem;
+      font-size: 3rem;
+      line-height: 4.2rem;
+    }
+    @include mq("large") {
+      margin-bottom: 4.5rem;
+      font-size: 3.6rem;
+      line-height: 5.4rem;
+    }
+  }
+
+  &-article {
+    display: flex;
+
+    &-img {
+      font-size: 8.2rem;
+      width: 1em;
+      height: 1em;
+      border-radius: 12px;
+      margin-right: 3rem;
+    }
+
+    &-text {
+      align-self: center;
+
+      &-title {
+        font-size: 2.4rem;
+        line-height: 3.6rem;
+        font-weight: 500;
+        margin-bottom: 1.2rem;
+        color: $grey-1;
+      }
+
+      &-desc {
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+        font-weight: 500;
+        color: $grey-3;
+      }
+    }
+  }
+}

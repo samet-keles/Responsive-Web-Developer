@@ -21,7 +21,8 @@
   }
 
   &-text {
-    @extend .blue-text;
+    font-weight: 500;
+    color: $blue;
     font-size: 1.2rem;
 
     @include mq("tablet") {
