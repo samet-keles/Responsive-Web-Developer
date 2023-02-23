@@ -36,15 +36,19 @@ html {
 
 // Join Component Start
 .Join {
+  margin-bottom: 15rem;
   @include mq("tablet") {
+    min-width: 35rem;
     max-width: 41rem;
   }
 
   @include mq("desktop") {
+    min-width: 35rem;
     max-width: 65rem;
   }
 
   @include mq("large") {
+    min-width: 35rem;
     max-width: 71rem;
   }
   &-label {
