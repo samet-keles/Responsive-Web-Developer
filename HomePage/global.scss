@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: $max-width;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $offset;
+  padding-left: $offset;
+}
+
+.main-title {
+  color: $grey-1;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 3rem;
+
+  @include mq("tablet") {
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+  }
+
+  @include mq("desktop") {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+  @include mq("large") {
+    font-size: 4.8rem;
+    line-height: 7.2rem;
+  }
+}
+
+// Join Component Start
+.Join {
+  margin-bottom: 15rem;
+  @include mq("tablet") {
+    min-width: 35rem;
+    max-width: 41rem;
+  }
+
+  @include mq("desktop") {
+    min-width: 35rem;
+    max-width: 65rem;
+  }
+
+  @include mq("large") {
+    min-width: 35rem;
+    max-width: 71rem;
+  }
+  &-label {
+    display: inline-block;
+    user-select: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-bottom: 0.5rem;
+    color: $grey-3;
+
+    @include mq("tablet") {
+      font-size: 1.2rem;
+      padding-bottom: 1rem;
+    }
+
+    @include mq("desktop") {
+      font-size: 1.4rem;
+    }
+
+    &-success {
+      color: $blue;
+      font-size: 1.4rem;
+      font-weight: 400;
+
+      @include mq("desktop") {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  &-form {
+    &-box {
+      &:focus-within {
+        outline: 1px solid $blue;
+      }
+
+      display: flex;
+      border-radius: 12px;
+      padding: 0.4rem 0.4rem 0.4rem $space;
+      background-color: $grey-6;
+
+      &-input {
+        min-width: 120px;
+        font-size: 1.4rem;
+        font-weight: 500;
+        border-radius: 12px;
+        flex-grow: 2;
+        border: none;
+        color: $grey-2;
+        background-color: $grey-6;
+
+        &::placeholder {
+          font-size: 1.4rem;
+          font-weight: 500;
+          color: $grey-4;
+
+          @include mq("desktop") {
+            font-size: 1.6rem;
+          }
+
+          @include mq("large") {
+            font-size: 1.8rem;
+          }
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      &-btn {
+        min-height: $finger-size;
+        font-size: 1.4rem;
+        font-weight: 500;
+        padding: 0.8em 1.5em;
+        border-radius: 12px;
+        cursor: pointer;
+        color: $grey-6;
+        background-color: $blue;
+
+        @include mq("tablet") {
+          font-size: 1.4rem;
+        }
+
+        @include mq("desktop") {
+          font-size: 1.6rem;
+        }
+
+        @include mq("large") {
+          font-size: 1.8rem;
+        }
+
+        &:hover {
+          color: #fff;
+          background-color: #298dc7;
+        }
+      }
+    }
+  }
+}
+// Join Component End
