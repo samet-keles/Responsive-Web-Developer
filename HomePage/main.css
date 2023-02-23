@@ -76,6 +76,7 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
+  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted; /* 2 */
 }
 
@@ -449,6 +450,8 @@ html {
 }
 .Join-label {
   display: inline-block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
   user-select: none;
   font-size: 1rem;
   font-weight: 500;
@@ -495,17 +498,28 @@ html {
   color: #4f4f4f;
   background-color: #f2f2f2;
 }
+.Join-form-box-input::-moz-placeholder {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #bdbdbd;
+}
 .Join-form-box-input::placeholder {
   font-size: 1.4rem;
   font-weight: 500;
   color: #bdbdbd;
 }
 @media (min-width: 992px) {
+  .Join-form-box-input::-moz-placeholder {
+    font-size: 1.6rem;
+  }
   .Join-form-box-input::placeholder {
     font-size: 1.6rem;
   }
 }
 @media (min-width: 1200px) {
+  .Join-form-box-input::-moz-placeholder {
+    font-size: 1.8rem;
+  }
   .Join-form-box-input::placeholder {
     font-size: 1.8rem;
   }
@@ -875,6 +889,7 @@ html {
     top: 0;
     width: 100%;
     height: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
   }
 }
@@ -978,6 +993,8 @@ html {
   cursor: pointer;
   margin-bottom: 7.6rem;
   border-radius: 24px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
   user-select: none;
   background-color: #ffffff;
 }
@@ -1175,6 +1192,7 @@ html {
   color: #2d9cdb;
 }
 .Projects-box-item-more:hover {
+  -webkit-text-decoration: underline wavy;
   text-decoration: underline wavy;
   text-underline-offset: 0.6rem;
 }
