@@ -74,7 +74,11 @@
           </h2>
           <figure class="Hero-arc">
             <!-- Ascpect Ratio Container-->
-            <img src="/img/heroImage.png" alt="team" class="Hero-arc-image" />
+            <img
+              data-src="/img/heroImage.png"
+              alt="team"
+              class="Hero-arc-image lazyload"
+            />
           </figure>
           <h2 class="Hero-botTitle">Story, emotion and purpose</h2>
           <p class="Hero-description">
@@ -163,9 +167,9 @@
           <div class="Projects-box-item left">
             <a href="#" class="Projects-box-item-link">
               <img
-                src="/img/smarthome.jpg"
+                data-src="/img/smarthome.jpg"
                 alt="Smart Home"
-                class="Projects-box-item-link-img"
+                class="Projects-box-item-link-img lazyload"
               />
               <p class="Projects-box-item-link-desc">Full stack application</p>
               <h3 class="Projects-box-item-link-title">Smart home dashboard</h3>
@@ -174,9 +178,9 @@
           <div class="Projects-box-item right">
             <a href="#" class="Projects-box-item-link">
               <img
-                src="/img/onboard.png"
+                data-src="/img/onboard.png"
                 alt="Onboard"
-                class="Projects-box-item-link-img"
+                class="Projects-box-item-link-img lazyload"
               />
               <p class="Projects-box-item-link-desc">UX/UI design</p>
               <h3 class="Projects-box-item-link-title">Onboard application</h3>
@@ -185,9 +189,9 @@
           <div class="Projects-box-item left">
             <a href="#" class="Projects-box-item-link">
               <img
-                src="/img/booking.png"
+                data-src="/img/booking.png"
                 alt="Booking"
-                class="Projects-box-item-link-img"
+                class="Projects-box-item-link-img lazyload"
               />
               <p class="Projects-box-item-link-desc">Mobile application</p>
               <h3 class="Projects-box-item-link-title">Booking system</h3>
@@ -196,9 +200,9 @@
           <div class="Projects-box-item right">
             <a href="#" class="Projects-box-item-link">
               <img
-                src="/img/juice-product.png"
+                data-src="/img/juice-product.png"
                 alt=""
-                class="Projects-box-item-link-img"
+                class="Projects-box-item-link-img lazyload"
               />
               <p class="Projects-box-item-link-desc">Front End application</p>
               <h3 class="Projects-box-item-link-title">
@@ -230,20 +234,20 @@
         <article class="Team-images">
           <div class="left">
             <img
-              class="Team-images-person1"
-              src="/img/person1.png"
+              class="Team-images-person1 lazyload"
+              data-src="/img/person1.png"
               alt="Person"
             />
           </div>
           <div class="right">
             <img
-              class="Team-images-person2"
-              src="/img/person2.png"
+              class="Team-images-person2 lazyload"
+              data-src="/img/person2.png"
               alt="Person"
             />
             <img
-              class="Team-images-person3"
-              src="/img/person3.png"
+              class="Team-images-person3 lazyload"
+              data-src="/img/person3.png"
               alt="Person"
             />
           </div>
@@ -261,9 +265,9 @@
         </blockquote>
         <article class="Quote-article">
           <img
-            src="/img/person4.png"
+            data-src="/img/person4.png"
             alt="Carlos Tran"
-            class="Quote-article-img"
+            class="Quote-article-img lazyload"
           />
 
           <div class="Quote-article-text">
@@ -290,11 +294,22 @@
             <a href="#index.html" class="Footer-social-logo">Edie</a>
             <div class="Footer-social-items">
               <a href="#">
-                <img src="/img/instagram.svg" alt="instagram logo" /> </a
+                <img
+                  class="lazyload"
+                  data-src="/img/instagram.svg"
+                  alt="instagram logo"
+                /> </a
               ><a href="https://www.linkedin.com/in/samet-keles/">
-                <img src="/img/linkedin.svg" alt="linkedin logo" /></a
+                <img
+                  class="lazyload"
+                  data-src="/img/linkedin.svg"
+                  alt="linkedin logo" /></a
               ><a href="#">
-                <img src="/img/twitter.svg" alt="twitter logo" />
+                <img
+                  class="lazyload"
+                  data-src="/img/twitter.svg"
+                  alt="twitter logo"
+                />
               </a>
             </div>
           </div>
@@ -335,6 +350,10 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- Main Js -->
     <script src="/js/main.js"></script>
+
+    <!-- Lazy Load -->
+    <script src="/js/lazysizes.min.js" async=""></script>
   </body>
 </html>
