@@ -91,7 +91,11 @@
             <label id="notification" for="email" class="Join-label"
               >Want us to contact you?</label
             >
-            <form class="Join-form" onsubmit="message(event)">
+            <form
+              id="Hero-notification"
+              class="Join-form"
+              onsubmit="message(event, this.id)"
+            >
               <div class="Join-form-box">
                 <input
                   id="email"
@@ -315,10 +319,10 @@
           </div>
           <div class="Join">
             <!-- Join Component -->
-            <label id="notification" for="email" class="Join-label"
+            <label id="notificationFooter" for="email" class="Join-label"
               >Want us to contact you?</label
             >
-            <form class="Join-form" onsubmit="message(event)">
+            <form class="Join-form" onsubmit="message(event, this.id)">
               <div class="Join-form-box">
                 <input
                   id="email"

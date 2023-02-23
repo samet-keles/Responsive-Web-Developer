@@ -13,10 +13,18 @@ const menuClick = () => {
 };
 
 let notification = document.querySelector("#notification");
+let notificationFooter = document.querySelector("#notificationFooter");
+
 notification.addEventListener("submit", message);
 
-function message(event) {
-  event.preventDefault();
-  notification.innerHTML = `Success!`;
-  notification.classList.add("Hero-label-success");
+function message(event, clicked_id) {
+  event.preventDefault(event, clicked_id);
+
+  if (clicked_id === "Hero-notification") {
+    notification.innerHTML = `Success!`;
+    notification.classList.add("Join-label-success");
+  } else {
+    notificationFooter.innerHTML = `Success!`;
+    notificationFooter.classList.add("Join-label-success");
+  }
 }
