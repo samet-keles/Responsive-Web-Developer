@@ -10,13 +10,16 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "browser-sync": "^2.27.12",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-imagemin": "^8.0.0",
     "gulp-sass": "^5.1.0",
+    "gulp-server-livereload": "^1.9.2",
     "sass": "^1.58.3"
   },
   "dependencies": {
-    "imagemin": "^8.0.1"
+    "imagemin": "^8.0.1",
+    "live-server": "^1.2.2"
   }
 }
