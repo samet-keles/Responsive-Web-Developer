@@ -82,6 +82,7 @@ $ gulp
 - [Lazy Load](https://afarkas.github.io/lazysizes/lazysizes.min.js)
 - [Webp Converter](https://www.freeconvert.com/webp-converter)
 - [Minifier](https://www.toptal.com/developers/cssminifier)
+- [Optimize LCP](https://web.dev/optimize-lcp/)
 
 ## Contact
 
