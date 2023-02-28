@@ -1,0 +1,15 @@
+@import "config/variable.scss";
+@import "config/mixin.scss";
+//
+@import "helper/normalize.scss";
+@import "helper/formalize.scss";
+@import "helper/global.scss";
+//
+@import "components/personal.scss";
+@import "components/skills.scss";
+@import "components/blog.scss";
+@import "components/hobies.scss";
+@import "components/experiences.scss";
+@import "components/filter.scss";
+@import "components/projects.scss";
+@import "components/pagination.scss";

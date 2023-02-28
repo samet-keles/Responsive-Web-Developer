@@ -1,0 +1,55 @@
+.Filter {
+  grid-column: 1 / 13;
+  border-radius: $b-radius;
+  padding: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+
+  @include mq("tablet") {
+    padding: 1.5rem;
+  }
+
+  @include mq("desktop") {
+    grid-area: F;
+    padding: 2rem;
+  }
+
+  @include mq("large") {
+    padding: 2.5rem;
+  }
+
+  &-title {
+    font: $text-lg;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: $grey-2;
+
+    @include mq("desktop") {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &-buttons {
+    &-btn {
+      cursor: pointer;
+      font: $text-sm;
+      font-weight: 500;
+      margin-right: 2rem;
+      background-color: transparent;
+      padding: 0.8rem 1rem;
+      color: $grey-2;
+      border-radius: $b-radius;
+      border: 0.1rem solid $grey-2;
+
+      &:focus {
+        border: 0.1rem solid $blue;
+        color: #ffffff;
+        background-color: $blue;
+      }
+
+      @include mq("tablet") {
+        margin-right: 3rem;
+      }
+    }
+  }
+}

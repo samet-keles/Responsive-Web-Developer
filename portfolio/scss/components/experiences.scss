@@ -1,0 +1,87 @@
+.Experiences {
+  grid-column: 1 / 13;
+  border-radius: $b-radius;
+  padding: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+
+  @include mq("tablet") {
+    padding: 1.5rem;
+  }
+
+  @include mq("desktop") {
+    grid-area: E;
+    padding: 2rem;
+  }
+
+  @include mq("large") {
+    padding: 2.5rem;
+  }
+
+  &-title {
+    font: $text-xl;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    color: $grey-2;
+
+    @include mq("desktop") {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &-item {
+    display: flex;
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+
+      @include mq("desktop") {
+        margin-bottom: 5rem;
+      }
+    }
+
+    &-logo {
+      align-self: center;
+      margin-right: 2rem;
+
+      img {
+        width: 9vw;
+        height: auto;
+      }
+
+      @include mq("tablet") {
+        margin-right: 3rem;
+      }
+    }
+
+    &-text {
+      &-date {
+        font: $text-sm;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+        color: $grey-3;
+
+        @include mq("desktop") {
+          margin-bottom: 1.5rem;
+        }
+      }
+
+      &-title {
+        font: $text-md;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: $grey-1;
+
+        @include mq("desktop") {
+          margin-bottom: 2rem;
+        }
+      }
+
+      &-desc {
+        font: $text-md;
+        font-weight: 500;
+        color: $grey-3;
+      }
+    }
+  }
+}

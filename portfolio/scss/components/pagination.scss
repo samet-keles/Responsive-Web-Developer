@@ -1,0 +1,30 @@
+.Pagination {
+  grid-column: 1 / 13;
+
+  display: flex;
+  justify-content: flex-end;
+
+  @include mq("desktop") {
+    display: none;
+  }
+
+  &-numb {
+    font: $text-lg;
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    margin-right: 2rem;
+    border-radius: 6px;
+    border: 1px solid $grey-2;
+    color: $grey-2;
+
+    &:focus {
+      border: 1px solid $blue;
+      background-color: $blue;
+      color: #ffffff;
+    }
+  }
+
+  .v-hidden {
+    visibility: hidden;
+  }
+}

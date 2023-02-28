@@ -1,0 +1,27 @@
+$finger-size: 4.4rem;
+$b-radius: 12px;
+//
+$text-sm: calc(0.8rem + 6 * ((100vw - 600px) / (1200 - 600))) /
+    calc(1.1rem + 6 * ((100vw - 600px) / (1200 - 600))) "Montserrat",
+  sans-serif;
+
+$text-md: calc(1rem + 6 * ((100vw - 600px) / (1200 - 600))) /
+    calc(1.4rem + 6 * ((100vw - 600px) / (1200 - 600))) "Montserrat",
+  sans-serif;
+
+$text-lg: calc(1.2rem + 6 * ((100vw - 600px) / (1200 - 600))) /
+    calc(1.6rem + 6 * ((100vw - 600px) / (1200 - 600))) "Montserrat",
+  sans-serif;
+
+$text-xl: calc(1.6rem + 8 * ((100vw - 600px) / (1200 - 600))) /
+    calc(2.1rem + 8 * ((100vw - 600px) / (1200 - 600))) "Montserrat",
+  sans-serif;
+//
+$grey-1: #333333;
+$grey-2: #4f4f4f;
+$grey-3: #828282;
+$grey-4: #e0e0e0;
+$grey-5: #f2f2f2;
+
+$blue: #2f80ed;
+//
