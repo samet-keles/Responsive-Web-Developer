@@ -35,7 +35,7 @@
 
 ![homepage](https://user-images.githubusercontent.com/60887763/221271266-6a482b16-40a9-402d-9777-93102ad5988a.gif)
 
-Our project aims to create a dynamic and user-friendly homepage that meets all of the specified design requirements.
+My project aims to create a dynamic and user-friendly homepage that meets all specified design requirements.
 
 - To see a live demo of the project, click on the provided [link.](https://homepage-sametkeles.vercel.app/)
 
